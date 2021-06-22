@@ -1,13 +1,14 @@
    
-    stage('build'){
-        sh"${mavenhome}/bin/mvn clean package"node{
+    node{
     def mavenhome = tool name: "maven3.6.3"
     properties([buildDiscarder(logRotator(artifactDaysToKeepStr: '', artifactNumToKeepStr: '5', daysToKeepStr: '', numToKeepStr: '5')), [$class: 'JobLocalConfiguration', changeReasonComment: ''], pipelineTriggers([pollSCM('* * * * *')])])
     
     stage('checkout'){
         git branch: 'development', credentialsId: 'f25162af-9797-41b7-a4d5-3a185f97d6d8', url: 'https://github.com/nagarjun-ec-apps/maven-web-application.git'
     }
-
+    stage('build'){
+        sh"${mavenhome}/bin/mvn clean package"
+    
     }
     stage('excutesonarcubereport')
     {
