@@ -6,7 +6,6 @@
 	<artifactId>maven-web-application</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	
 	<name>maven-web-application</name>
 
 	<description>Maven Web Project for Java Programming Language</description>
@@ -21,7 +20,7 @@
 		<spring.version>5.1.2.RELEASE</spring.version>
 		<junit.version>4.11</junit.version>
 		<log4j.version>1.2.17</log4j.version>
-		<sonar.host.url>http://52.66.252.44:9000/ </sonar.host.url>
+		<sonar.host.url>http://65.0.179.195:9000/</sonar.host.url>
                 <sonar.login>admin</sonar.login>
 		<sonar.password>12345678</sonar.password>  
               
@@ -99,13 +98,13 @@
 	    <repository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Releases Nexus Repository</name>
-	      <url>http://3.108.54.142:8081/maharjun/repository/wallmart-release/</url>
+	      <url>http://65.0.179.195:8081/maharjun/repository/wallmart-release/</url>
 	    </repository>
 	    
 	    <snapshotRepository>
 	      <id>nexus</id>
 	      <name>Mithun Technologies Snapshot Nexus Repository </name>
-	      <url>http://3.108.54.142:8081/maharjun/repository/wallmart-snapchart/</url>
+	      <url>http://65.0.179.195:8081/maharjun/repository/wallmart-snapchart/</url>
 	    </snapshotRepository>
 	    
 	</distributionManagement>
